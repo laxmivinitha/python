@@ -1,0 +1,6 @@
+list=[30,50,70,10,40,20]
+min=list[0]
+for i in list:
+     if i<min:
+        min=i
+        print(min)
