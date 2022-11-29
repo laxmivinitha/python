@@ -1,0 +1,26 @@
+a=10
+b=20
+c=30
+d=40
+if a>b and a>c:
+    if a>d:
+        print('big is',a)
+
+
+
+if b>a and b>c:
+    if b>d:
+        print('big is',b)
+
+
+
+if c>a and c>b:
+    if c>d:
+        print('big is',c)
+
+
+if d>a and d>b:
+    if d>c:
+        print('big is',d)
+
+
