@@ -1,0 +1,35 @@
+eno=int(input('enter no.'))
+ename=input('enter name')
+edesign=input('enter desig')
+da=int(input('daily allowance'))
+ta=int(input('travelling allowance'))
+hra=int(input('house rental allowance'))
+basicsalary=int(input('enter salary'))
+
+netsalary=basicsalary+da+ta+hra
+print(netsalary)
+
+if netsalary>100000:
+    tax=netsalary*10/100
+
+elif netsalary>50000:
+    tax=netsalary*7/100
+    
+elif netsalary>40000:
+    tax=netsalary*4/100
+    
+
+elif netsalary>20000:
+    tax=netsalary*2/100
+    
+
+elif netsalary<20000:
+    tax=0
+    
+print(tax)
+    
+
+
+    
+
+
