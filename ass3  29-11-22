@@ -1,0 +1,15 @@
+sno=int(input())
+sname=input()
+s1=int(input())
+s2=int(input())
+s3=int(input())
+print(sno)
+print(sname)
+if(s1>=35):
+     if(s2>=35):
+         if(s3>=35):
+             print('PASS')
+             
+             
+else:
+    print('FAIL')
