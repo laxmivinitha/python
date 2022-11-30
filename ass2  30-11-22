@@ -1,0 +1,51 @@
+egg=30
+br=50
+ch=80
+oil=150
+mk=100
+cphno=input('enter phone number')
+cname=input('enter name')
+caddr=input('enter address')
+eq=int(input('no.of eggs'))
+brq=int(input('bread packets'))
+chq=int(input('no.of chocolates'))
+oilq=int(input('no.of oil packets'))
+mkq=int(input('no.of milk packets'))
+coupon=input('enter coupon code in capital letters only')
+
+bill=egg*eq+br*brq+ch*chq+oil*oilq+mk*mkq
+        
+if bill>=3000:
+    tax=bill*5/100
+        
+elif bill>=2000:
+     tax=bill*7/100
+     
+elif bill>=1000:
+    tax=bill*10/100
+    
+elif bill>=500:
+    tax=bill*15/100
+else:
+    tax=100
+    
+bill=bill+tax
+
+if coupon=='DIWALI' and bill>=5000:
+    dis=bill*10/100
+elif coupon=='DIWALI' and bill>=3000:
+    dis=bill*6/100
+elif coupon=='DIWALI' and bill>=1000:
+    dis=bill*4/100
+else:
+    dis=0
+    
+
+bill=bill+tax-dis
+
+print(cphno)
+print(cname)
+print(caddr)
+print(tax)
+print(bill)
+
