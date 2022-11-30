@@ -1,0 +1,24 @@
+
+units=int(input('enter the number of units you consumed per month'))
+if(units<=100):
+    payAmt=units*1.5
+    fixedcharge=25.00
+elif(units<=200):
+    payAmt=(100*1.5)+(units-100)*2.5
+    fixedcharge=50.00
+elif(units<=300):
+    payAmt=(100*1.5)+(200-100)*2.5+(units-200)*4
+    fixedcharge=75.00
+elif(units<=350):
+    payAmt=(100*1.5)+(200-100)*2.5+(300-200)*4+(units-300)*5
+    fixedcharge=100.00
+else:
+    payAmt=0
+    fixedcharge=1500.00
+
+billamt=payAmt+fixedcharge;
+print(payAmt)
+print(fixedcharge)
+print(billamt)
+       
+       
