@@ -1,0 +1,39 @@
+
+#WAY1:--
+
+def big(n):
+    if n>=18:
+        print('ELIGIBLE')
+    else:
+        print('NOT ELIGIBLE')
+
+x=int(input())
+big(x)
+
+
+#WAY2:--
+
+def big(n):
+    if n>=18:
+        return 'ELIGIBLE'
+    else:
+        return 'NOT ELIGIBLE'
+
+x=int(input())
+print(big(x))
+
+
+#WAY3:--
+
+def big(n):
+    if n>=18:
+        return True
+    else:
+        return False
+
+x=int(input())
+if big(x):
+    print('ELIGIBLE')
+else:
+    print('NOT ELIGIBLE')
+
