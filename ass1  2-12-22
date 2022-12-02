@@ -1,0 +1,40 @@
+#WAY1:--
+
+def big(x,y):
+    if x>y:
+        print('X IS BIG',x)
+    else:
+        print('Y IS BIG',y)
+
+x=int(input())
+y=int(input())
+big(x,y)
+
+
+#WAY2:--
+
+def big(x,y):
+    if x>y:
+        return 'x is big'
+    else:
+        return 'y is big'
+
+x=int(input())
+y=int(input())
+print(big(x,y))
+
+
+#WAY3:--
+
+def big(x,y):
+    if x>y:
+        return True
+    else:
+        return False
+
+x=int(input())
+y=int(input())
+if big(x,y):
+    print('x is big')
+else:
+    print('y is big')
