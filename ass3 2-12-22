@@ -1,0 +1,40 @@
+
+#WAY1:--
+
+def LEAP(n):
+    if n%4==0 and n%100!=0 or n%400==0 :
+        print('LEAP YEAR')
+    else:
+        print('NON LEAP YEAR')
+
+x=int(input())
+LEAP(x)
+
+
+#WAY2:--
+def LEAP(n):
+    if n%4==0 and n%100!=0 or n%400==0 :
+        return 'LEAP YEAR'
+    else:
+        return 'NON LEAP YEAR'
+
+
+x=int(input())
+print(LEAP(x))
+
+
+
+#WAY3:--
+
+def LEAP(n):
+    if n%4==0 and n%100!=0 or n%400==0 :
+        return True
+    else:
+        return False
+
+x=int(input())
+if LEAP(x):
+    print('LEAP YEAR')
+else:
+    print('NON LEAP YEAR')
+ 
