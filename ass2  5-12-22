@@ -1,0 +1,32 @@
+n=int(input("range"))
+n1=int(input('enter n1'))
+L=n1
+i=1
+while(i<n):
+    nL=int(input('enter nL'))
+    if(nL>L):
+        L=nL
+    i=i+1
+print(L)
+
+S=n1
+i=1
+while(i<n):
+    nS=int(input('enter nS'))
+    if(nS<S):
+        s=nS
+    i=i+1
+print(S)
+d=L-S
+print(d)
+        
+       
+    
+     
+      
+
+            
+        
+        
+        
+
