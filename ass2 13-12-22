@@ -1,0 +1,8 @@
+n=int(input())
+vinitha=list(map(int,input().split()))
+ch=[]
+print(vinitha)#before remove duplication
+for i in vinitha:
+    if i not in ch:
+        ch.append(i)
+print(ch)#after removed duplication       
