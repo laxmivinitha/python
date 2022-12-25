@@ -1,0 +1,12 @@
+n=int(input())
+t=n
+a=list(map(int,input().split()))
+c=0
+for i in range(n):
+    for j in range(0,n):
+        if a[i]==a[j]:
+            c=c+1
+if c==t:
+    print('UNIQUE')
+else:
+    print('DUPLICATE')
