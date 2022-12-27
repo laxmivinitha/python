@@ -1,0 +1,27 @@
+n=int(input())
+l=list(map(int,input().split()))
+x=int(input())
+beg=0
+end=n-1
+mid=0
+flag=0
+if beg>end:
+    print('not possible to find')
+while(beg<=end):
+    mid=(beg+end)//2
+    if l[mid]==x:
+        flag=1
+        break
+    elif x>l[mid]:
+        beg=mid+1
+    else:
+        end=mid-1
+        mid=(beg+end)//2
+        
+if flag==1:
+    print('element is found at',mid,'index location')
+else:
+    print('element is not found')
+        
+    
+    
