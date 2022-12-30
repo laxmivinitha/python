@@ -1,0 +1,7 @@
+n,r=list(map(int,input().split()))
+l=list(map(int,input().split()))
+a=l[0:r]
+b=l[r:n]
+c=b+a
+for i in c:
+    print(i,end=' ')
