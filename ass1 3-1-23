@@ -1,0 +1,15 @@
+n=int(input())
+a=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    a.append(l)
+for i in a:
+    print(i)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            print(a[i][j])
+    
