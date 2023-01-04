@@ -1,0 +1,24 @@
+r=int(input())
+c=int(input())
+m=[]
+for i in range(0,r):
+    l=[]
+    for j in range(0,c):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(r):
+    s=0
+    for j in range(c):
+        s=s+m[i][j]
+    if s==2:
+        print('CODER TARGET MATRIX')
+    else:
+        print(' NOT A CODER TARGET MATRIX')
+    
+        
+    
+
+        
+        
+
