@@ -1,0 +1,29 @@
+n=int(input())
+m=[]
+a=[]
+#v=list(map(int,input().split()))
+for i in range(n):
+    l=[]
+    for j in range(n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            a.append(m[i][j])
+        if i+j==n-1:
+            a.append(m[i][j])
+for i in a:
+    print(i)
+max=a[0]
+min=a[0]
+for i in a:
+    if max>i:
+        max=i
+    if min<i:
+        min=i
+print('max is:',max)
+print('min is:',min)
+        
+
