@@ -1,0 +1,16 @@
+n=int(input())
+m=[]
+s=0
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(0,n):
+    for j in range(0,n):
+        if i==j:
+            s=s+m[i][j]
+        elif i+j==n-1:
+            s=s+m[i][j]
+print(s)           
