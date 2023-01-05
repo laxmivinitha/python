@@ -1,0 +1,23 @@
+n=int(input())
+m=[]
+for i in range(n):
+    l=[]
+    for j in range(n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+print(m)
+
+k=int(input('k value'))
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+            m[i][j]=k
+        else:
+            m[i][j]=0
+for i in range(n):
+    for j in range(n):
+        print(m[i][j],end=' ')
+    print()
+
+        
