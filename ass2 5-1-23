@@ -1,0 +1,17 @@
+n=int(input())
+m=[]
+v=[]
+for i in range(n):
+    l=[]
+    for j in range(n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(n):
+    for j in range(n):
+        x=m[i][j]
+        if x%2==1:
+            v.append(x)
+for i in v:
+    print(i,end=' ')
+        
