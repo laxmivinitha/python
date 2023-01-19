@@ -1,0 +1,20 @@
+def valid(s):
+    while(True):
+        if '[]' in s:
+            s=s.replace('[]','')
+        elif '()' in s:
+            s=s.replace('()','')   
+        elif '{}' in s:
+            s=s.replace('{}','')
+        else:
+            return not s 
+n=int(input())
+for i in range(n,0,-1):
+    res=''
+    s=input()
+    if valid(s):
+        res=res+'YES'
+    else:
+        res=res+'NO'
+    print(res)    
+    
