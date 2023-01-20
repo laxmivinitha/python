@@ -1,0 +1,8 @@
+s=input()
+n=len(s)
+vowel=['a','e','i','o','u','A','E','I','O','U']
+res= ''
+for i in range(n):
+    if s[i] not in vowel:
+        res=res+s[i]
+print(res)
